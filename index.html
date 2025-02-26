@@ -205,14 +205,13 @@
     }
   }
 </style>
- <!-- Botões de altern��ncia de idioma -->
- <div style="text-align: center; margin-top: 20px;">
-   <button onclick="switchLanguage('pt')">Português</button>
-   <button onclick="switchLanguage('en')">English</button>
- </div>
-
- <!-- Conteúdo em Português -->
- <div id="content-pt">
+<!-- Botões de altern��ncia de idioma -->
+<div style="text-align: center; margin-top: 20px;">
+  <button onclick="switchLanguage('pt')" type="button" style="background-image: url(&quot;https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png/image&quot;); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; width: 48px; height: 35px; border-color: rgb(250, 249, 249); border-width: 0px;" name=""></button>
+  <button onclick="switchLanguage('en')" style="background-image: url(&quot;https://www.gov.br/agricultura/pt-br/assuntos/relacoes-internacionais/agro-mais-investimentos/imagens/bandeira-dos-estados-unidos.png/@@images/image.png&quot;); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; border-width: 0px; width: 48px; height: 35px;" name=""></button>
+</div>
+<!-- Conteúdo em Português -->
+<div id="content-pt">
   <!-- Header -->
   <header style="background-image: url(&quot;https://www.uspceu.com/Portals/0/img/oferta-academica/cabeceras/1920x500_cabecera_grado_inteligencia_negocios.jpg&quot;); background-repeat: no-repeat; background-size: cover; width: 100%; background-position: 50% 50%; height: 220px;">
     <h3 style="color: rgb(16, 15, 15); font-family: &quot;Trebuchet MS&quot;, Helvetica, sans-serif; font-weight: 200; line-height: 35px; height: 35px; letter-spacing: 0px; margin-top: 110px;">Data Analyst | Data Science | Business Intelligence</h3>
@@ -282,11 +281,10 @@
   </section>
   <!-- Footer -->
   <h6 style="text-align: center; width: 100%; opacity: 0.9; text-decoration-color: rgb(18, 17, 17); background-color: rgb(26, 25, 25); color: rgb(253, 252, 252); display: block; float: none; font-family: &quot;Trebuchet MS&quot;, Helvetica, sans-serif;">Arnaldo João Bastos Júnior ₢ 2025 | Todos os direitos reservados</h6>
- </div>
-
- <!-- Conteúdo em Inglês -->
- <div id="content-en" style="display: none;">
-      <!-- Header -->
+</div>
+<!-- Conteúdo em Inglês -->
+<div id="content-en" style="display: none;">
+  <!-- Header -->
   <header style="background-image: url(&quot;https://www.uspceu.com/Portals/0/img/oferta-academica/cabeceras/1920x500_cabecera_grado_inteligencia_negocios.jpg&quot;); background-repeat: no-repeat; background-size: cover; width: 100%; background-position: 50% 50%; height: 220px;">
     <h3 style="color: rgb(16, 15, 15); font-family: &quot;Trebuchet MS&quot;, Helvetica, sans-serif; font-weight: 200; line-height: 35px; height: 35px; letter-spacing: 0px; margin-top: 110px;">Data Analyst | Data Science | Business Intelligence</h3>
   </header>
@@ -355,11 +353,10 @@
   </section>
   <!-- Footer -->
   <h6 style="text-align: center; width: 100%; opacity: 0.9; text-decoration-color: rgb(18, 17, 17); background-color: rgb(26, 25, 25); color: rgb(253, 252, 252); display: block; float: none; font-family: &quot;Trebuchet MS&quot;, Helvetica, sans-serif;">Arnaldo João Bastos Júnior ₢ 2025 | All rights reserved</h6>
-   
- <script>
+  <script>
     function switchLanguage(lang) {
       document.getElementById('content-pt').style.display = (lang === 'pt') ? 'block' : 'none';
       document.getElementById('content-en').style.display = (lang === 'en') ? 'block' : 'none';
     }
   </script>
- </div>
+</div>
