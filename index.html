@@ -1,8 +1,13 @@
 <html lang="pt">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfólio - Analista de Dados | Visualize habilidades, projetos e mais.">
-<title>Portfolio - Arnaldo Bastos</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio - Analista de Dados | Visualize habilidades, projetos e mais.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Portfolio - Arnaldo Bastos</title>
+</head>
+<body>
+
 <style>
   /* Reset geral e estilo base */
   * {
@@ -194,32 +199,11 @@
     font-size: 1rem;
   }
   /* Responsividade */
-  @media (max-width: 768px) {
-    .projects-container {
-      grid-template-columns: 1fr 1fr;
-    }
-    .skills-item {
-      margin-bottom: 20px;
-    }
-    nav a {
-      margin: 0 15px;
-    }
+  @media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
   }
-  @media (max-width: 480px) {
-    header h1 {
-      font-size: 2.5rem;
-    }
-    nav {
-      flex-direction: column;
-      padding: 20px 0;
-    }
-    .skills-item {
-      padding: 15px;
-    }
-    .projects-container {
-      grid-template-columns: 1fr;
-    }
-  }
+}
 </style>
 
 <script>
@@ -236,13 +220,13 @@
 
       // Seção "Sobre"
       document.getElementById('sobre-title').innerText = 'About Me';
-      document.getElementById('sobre-text').innerText = 'Learn more about my journey and expertise.';
+      document.getElementById('sobre-text').innerText = 'For over 5 years I have been dedicating myself to this universe of Analytics, combining two passions: working on challenging problems + creative/innovative solutions. More than simply delivering tables and reports with numerical insights, my training in the exact area combined with a desire to always delight and "do different" helps me to be a professional in constant growth and who often delivers his results from a new perspective.';
 
       // Seção "Habilidades"
-      document.getElementById('skills-title').innerText = 'Skills';
+      document.getElementById('skills-title').innerText = 'Technical Skills';
 
       // Seção "Projetos"
-      document.getElementById('projetos-title').innerText = 'Projects';
+      document.getElementById('projetos-title').innerText = 'My Projects';
 
       // Seção "Contato"
       document.getElementById('contato-title').innerText = 'Contact';
@@ -287,8 +271,8 @@
   
 <!-- Botões de alternancia de idioma -->
 <div style="text-align: center; margin-top: 20px;">
-  <button onclick="switchLanguage('pt')" type="button" style="background-image: url(&quot;https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png/image&quot;); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; width: 48px; height: 35px; border-color: rgb(250, 249, 249); border-width: 0px;" name="" autofocus="autofocus"></button>
-  <button onclick="switchLanguage('en')" type="button" style="background-image: url(&quot;https://www.gov.br/agricultura/pt-br/assuntos/relacoes-internacionais/agro-mais-investimentos/imagens/bandeira-dos-estados-unidos.png/@@images/image.png&quot;); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; border-width: 0px; width: 48px; height: 35px;" name="" type="button" autofocus="autofocus"></button>
+  <button onclick="switchLanguage('pt')" type="button" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg'); background-size: cover; width: 48px; height: 35px; border: none;"></button>
+  <button onclick="switchLanguage('en')" type="button" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg'); background-size: cover; width: 48px; height: 35px; border: none;"></button>
 </div>
 <!-- Conteúdo em Português -->
 <div id="content-pt">
@@ -492,3 +476,4 @@
   <!-- Footer -->
   <h6 style="text-align: center; width: 100%; opacity: 0.9; text-decoration-color: rgb(18, 17, 17); background-color: rgb(26, 25, 25); color: rgb(253, 252, 252); display: block; float: none; font-family: &quot;Trebuchet MS&quot;, Helvetica, sans-serif;">Arnaldo João Bastos Júnior ₢ 2025 | All rights reserved</h6>
 </div>
+</html>
