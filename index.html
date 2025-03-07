@@ -220,6 +220,8 @@
     }
   }
 </style>
+
+<body>
 <!-- Botões de alternancia de idioma -->
 <div style="text-align: center; margin-top: 20px;">
   <button onclick="switchLanguage('pt')" type="button" style="background-image: url(&quot;https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png/image&quot;); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; width: 48px; height: 35px; border-color: rgb(250, 249, 249); border-width: 0px;" name="" autofocus="autofocus"></button>
@@ -424,3 +426,20 @@
     }
   </script>
 </div>
+
+  <script>
+  function switchLanguage(lang) {
+      if (lang === 'pt') {
+          document.getElementById('nav-about').innerText = 'Sobre';
+          document.getElementById('nav-skills').innerText = 'Habilidades';
+          document.getElementById('nav-projects').innerText = 'Projetos';
+          document.getElementById('nav-contact').innerText = 'Contato';
+      } else if (lang === 'en') {
+          document.getElementById('nav-about').innerText = 'About Me';
+          document.getElementById('nav-skills').innerText = 'Skills';
+          document.getElementById('nav-projects').innerText = 'Projects';
+          document.getElementById('nav-contact').innerText = 'Contact';
+      }
+  }
+  </script>
+</body>
