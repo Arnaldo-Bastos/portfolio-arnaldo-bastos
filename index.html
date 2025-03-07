@@ -215,20 +215,29 @@
       document.getElementById('nav-projects').innerText = 'Projects';
       document.getElementById('nav-contact').innerText = 'Contact';
 
+      // Navbar links
+      document.getElementById('nav-about').setAttribute('href', '#about');
+      document.getElementById('nav-skills').setAttribute('href', '#skills');
+      document.getElementById('nav-projects').setAttribute('href', '#projects');
+      document.getElementById('nav-contact').setAttribute('href', '#contact');
+
       // Header
       document.getElementById('header-title').innerText = 'Data Analyst | Data Scientist | Business Intelligence';
 
       // Seção "Sobre"
       document.getElementById('sobre-title').innerText = 'About Me';
+      document.getElementById('sobre').setAttribute('id', 'about');
 
       // Seção "Habilidades"
       document.getElementById('skills-title').innerText = 'Technical Skills';
 
       // Seção "Projetos"
       document.getElementById('projetos-title').innerText = 'My Projects';
+      document.getElementById('projetos').setAttribute('id', 'projects');
 
       // Seção "Contato"
       document.getElementById('contato-title').innerText = 'Contact';
+      document.getElementById('contato').setAttribute('id', 'contact');
 
       // Alternância de visibilidade
       document.getElementById('content-pt').style.display = 'none';
@@ -241,19 +250,28 @@
       document.getElementById('nav-projects').innerText = 'Projetos';
       document.getElementById('nav-contact').innerText = 'Contato';
 
+      // Navbar links
+      document.getElementById('nav-about').setAttribute('href', '#sobre');
+      document.getElementById('nav-skills').setAttribute('href', '#skills');
+      document.getElementById('nav-projects').setAttribute('href', '#projetos');
+      document.getElementById('nav-contact').setAttribute('href', '#contato');
+
       // Header
       document.getElementById('header-title').innerText = 'Analista de Dados | Cientista de Dados | Inteligência de Negócios';
 
       // Seção "Sobre"
+      document.getElementById('about').setAttribute('id', 'sobre');
       document.getElementById('sobre-title').innerText = 'Arnaldo João Bastos Júnior';
 
       // Seção "Habilidades"
       document.getElementById('skills-title').innerText = 'Habilidades';
 
       // Seção "Projetos"
+      document.getElementById('projects').setAttribute('id', 'projetos');
       document.getElementById('projetos-title').innerText = 'Projetos';
 
       // Seção "Contato"
+      document.getElementById('contact').setAttribute('id', 'contato');
       document.getElementById('contato-title').innerText = 'Contato';
 
       // Alternância de visibilidade
@@ -262,8 +280,6 @@
     }
   }
 </script>
-
-
   
 <!-- Botões de alternancia de idioma -->
 <div style="text-align: center; margin-top: 20px;">
