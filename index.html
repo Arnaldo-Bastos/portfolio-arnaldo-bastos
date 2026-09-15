@@ -50,9 +50,18 @@
 @media(max-width:380px){.tool-gem{width:106px;height:120px}}
 @media(prefers-reduced-motion:reduce){.dodeca-solid{animation:none!important;transform:rotateX(-9deg) rotateY(-12deg) rotateZ(-4deg)}}
 
-/* Opacity applies ONLY to the faces, never to the solid or its logo. */
-:root{--dodeca-face-opacity:.24}
-.dodeca-face{opacity:var(--dodeca-face-opacity)}
+/* Wireframe dodecahedron: transparent faces + turquoise edges.
+   The edge color matches the site's accent color (#70DED0). Logos remain fully opaque. */
+:root{--dodeca-edge-color:#70ded0}
+.dodeca-face{
+  opacity:1;
+  background-color:transparent!important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='2,20 61.8,2 98,50 61.8,98 2,80' fill='none' stroke='%2370ded0' stroke-width='2.6' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E")!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:100% 100%!important;
+  filter:drop-shadow(0 0 2px rgba(112,222,208,.28));
+}
 .dodeca-solid,.tool-gem img.dodeca-logo{opacity:1}
 /* New skills wrap automatically within their category.
    To add a skill, copy one .tool block and change only the image src/alt and .tool-name.
@@ -72,8 +81,8 @@ ADICIONAR NOVAS HABILIDADES / LOGOS
    Não é necessário copiar faces 3D nem alterar o JavaScript.
 5. Para nomes diferentes em português/inglês, adicione data-pt e data-en
    ao span class="tool-name"; a troca de idioma já reconhece esses atributos.
-6. Para ajustar a transparência das faces, procure --dodeca-face-opacity.
-   0 = invisível, 1 = opaco. Essa variável NÃO altera a opacidade do logo.
+6. Os dodecaedros usam faces transparentes e arestas turquesa (#70DED0),
+   no mesmo tom de --accent da página. Os logos permanecem totalmente opacos.
 
 MODELO PARA COPIAR:
 <div class="tool">
